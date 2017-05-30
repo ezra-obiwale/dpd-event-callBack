@@ -6,7 +6,9 @@ It works with a [router middleware](https://github.com/ezra-obiwale/dpd-router-m
 
 ### Installation
 
-`npm install dpd-router-event dpd-router-middleware --save`
+````
+npm install dpd-router-event dpd-router-middleware --save
+````
 
 ### Usage
 
