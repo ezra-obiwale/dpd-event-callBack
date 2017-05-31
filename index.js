@@ -30,7 +30,7 @@ RouterEventResource.prototype.handle = function (ctx, next) {
 
     var domain = {
         url: ctx.url
-        , ressource: parts.shift()
+        , resource: parts.shift()
         , parts: parts
         , query: ctx.query
         , body: ctx.body
