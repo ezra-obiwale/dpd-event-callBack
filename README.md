@@ -6,7 +6,9 @@ It works with a [router middleware](https://github.com/ezra-obiwale/dpd-router-m
 
 ### Installation
 
-`npm install dpd-router-event dpd-router-middleware --save`
+````
+$ npm install dpd-router-event dpd-router-middleware --save
+````
 
 ### Usage
 
@@ -22,3 +24,4 @@ NOTE: method `setResult` has been removed to mark a major difference between rou
 #### Also
 
 Apart from the apis provided by `dpd-event-callback` (`body`, `query`, etc), **`resource`** has also been added and holds the actual resource requested.
+
