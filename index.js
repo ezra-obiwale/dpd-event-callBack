@@ -19,7 +19,7 @@ RouterEventResource.prototype.handle = function (ctx, next) {
     var parts = ctx.req.url.split('/').filter(function (p) {
         return p;
     }),
-            resource = parts.shift();
+            resource = parts.shift().split('?')[0];
 
     // pass dashboard and its activities through
     if (["dashboard", "dpd.js", "__resources"].indexOf(resource) !== -1)
