@@ -16,12 +16,10 @@ module.exports = RouterEventResource;
 RouterEventResource.prototype.clientGeneration = false;
 
 RouterEventResource.prototype.handle = function (ctx, next) {
-    var parts = ctx.req.url.split('/').filter(function (p) {
+    var parts = ctx.req.url.split('?')[0].split('/').filter(function (p) {
         return p;
     }),
             resource = parts.shift();
-    if (resource && resource.indexOf('?') !== -1)
-        resource = resource.split('?')[0];
 
     // pass dashboard and its activities through
     if (["dashboard", "dpd.js", "__resources"].indexOf(resource) !== -1)
